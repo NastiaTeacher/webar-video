@@ -10,9 +10,11 @@
         <video id="video1" src="myvideo.mp4" autoplay loop muted playsinline></video>
       </a-assets>
 
-     <a-marker type="pattern" url="yourmarker.patt">
-  <!-- Your AR content (video, 3D model, etc.) -->
-</a-marker>
+      <!-- This is where you connect your marker -->
+      <a-marker type="pattern" url="mycard.patt">
+        <!-- Your video -->
+        <a-video src="#video1" width="1.5" height="0.85" position="0 0 0" rotation="-90 0 180"></a-video>
+      </a-marker>
 
       <a-entity camera></a-entity>
     </a-scene>
