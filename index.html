@@ -11,7 +11,8 @@
       </a-assets>
 
       <a-marker preset="hiro">
-        <a-video src="#video1" width="2" height="1.125" position="0 0 0"></a-video>
+        <!-- Correct rotation to lay flat on the marker and size to make it visible -->
+        <a-video src="#video1" width="2" height="1.125" position="0 0 0" rotation="-90 0 0"></a-video>
       </a-marker>
 
       <a-entity camera></a-entity>
